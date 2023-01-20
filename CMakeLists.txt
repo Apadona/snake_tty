@@ -52,6 +52,7 @@ if( CMAKE_BUILD_TYPE STREQUAL "Debug" )
     set_target_properties( snake PROPERTIES
                             COMPILE_FLAGS "-m${target_architecture} ${debug_compile_flags}"
                          )
+    target_compile_definitions( snake PRIVATE "DEBUG_MODE" )
 endif()
 
 if( CMAKE_BUILD_TYPE STREQUAL "Release" )
