@@ -10,8 +10,11 @@ else
 fi
 
 cmake .. -G "Unix Makefiles"
-echo "cmake has generated the build files. now onto building the project."
+if [ $? -eq 0 ]; then
+	echo "cmake has generated the build files. now onto building the project."
 
-
-cmake --build . -j$(nproc)
-echo "building is complete."
+	cmake --build . -j$(nproc)
+	if [ $? -eq 0 ]; then
+		echo "building is complete."
+	fi
+fi
