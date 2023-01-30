@@ -5,6 +5,7 @@ snake game coded in C++ for console enviroment.
 #### for compiling the project you need:
 ### gcc ( that supports C++17 )
 ### cmake( atleast 3.16 ) installed.
+### Linux
 
 For compiling the project simply just run the **scripts/build.sh** file and it will build automatically. for compiling in debug mode, run **scripts/debug_build.sh**.
 
