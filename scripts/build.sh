@@ -9,7 +9,7 @@ else
 	cd build_files
 fi
 
-cmake .. -G "Unix Makefiles"
+cmake .. -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="Release"
 if [ $? -eq 0 ]; then
 	echo "cmake has generated the build files. now onto building the project."
 
